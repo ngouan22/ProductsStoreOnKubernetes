@@ -14,12 +14,12 @@ jobs:
   build-deploy-aks:
     runs-on: ubuntu-latest
     env:
-      DOCKER_REPOSITORY: houssemdocker # name of Docker Hub ID
+      DOCKER_REPOSITORY: geektecknology # name of Docker Hub ID
       IMAGE_NAME: webapp
       IMAGE_TAG: ${{ github.run_number }} # $GITHUB_RUN_NUMBER
       
       CLUSTER_NAME: aks-cluster
-      RESOURSE_GROUP: rg-aks-cluster
+      RESOURSE_GROUP: rg_sb_eastus_48192_1_169411323229
     
     steps:
 
